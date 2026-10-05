@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: project4-storefront
+  jpa:
+    open-in-view: false
+
+project4:
+  database-name: ${PROJECT4_DATABASE_NAME:project4-storefront}
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info

@@ -16,10 +16,13 @@ testing, advanced Spring patterns, and small progression projects.
 - `guides/PROJECT1_EMPLOYEE_MANAGEMENT_GUIDE.md` — first progression project.
 - `guides/PROJECT2_SPRING_CORE_INVENTORY_GUIDE.md` — Spring Core inventory project.
 - `guides/PROJECT3_SPRING_MVC_BLOG_GUIDE.md` — full-stack Spring MVC blog project.
+- `guides/PROJECT4_SPRING_BOOT_JPA_STOREFRONT_GUIDE.md` — full-stack Boot/JPA storefront.
 - `src/main/java/com/jarirahmed/projects/employeecli` — testable Java CLI.
 - `src/main/java/com/jarirahmed/projects/inventory` — Spring Core inventory project.
 - `src/main/java/com/jarirahmed/projects/blog` — Spring MVC blog backend and Boot entry point.
 - `src/main/resources/static/project3` — browser frontend for Project 3.
+- `src/main/java/com/jarirahmed/projects/storefront` — Spring Boot/JPA storefront backend.
+- `src/main/resources/static/project4` — browser frontend for Project 4.
 - `src/main/resources` — Boot configuration and JPA persistence metadata.
 - `pom.xml` — Maven dependencies and executable-JAR build.
 
@@ -32,7 +35,10 @@ services, repositories, and tests. Project 3 is a browser-browseable Spring
 MVC Blog Studio with a REST backend, static frontend, users, posts, comments,
 validation, CRUD, and exception handling. The advanced phase documents Redis,
 messaging, Docker, deployment, and operations without requiring external
-services during the normal build.
+services during the normal build. Project 4 is a browser-browseable Spring
+Boot + JPA storefront with entities, relationships, DTOs, JPQL search,
+pagination, transactions, authentication, cart, checkout, orders, and payment
+records.
 
 ## Run
 
@@ -50,6 +56,10 @@ java -jar target/java-spring-learning-0.1.0-SNAPSHOT.jar --project2
 # Start Project 3's browser frontend and backend.
 java -jar target/java-spring-learning-0.1.0-SNAPSHOT.jar --project3
 # Browse http://localhost:8080/project3/
+
+# Start Project 4's browser frontend and JPA backend.
+java -jar target/java-spring-learning-0.1.0-SNAPSHOT.jar --project4
+# Browse http://localhost:8080/project4/
 ```
 
 This is a learning repository. The in-memory credentials and H2 databases are

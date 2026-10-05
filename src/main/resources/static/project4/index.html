@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A small Spring Boot and JPA storefront learning project.">
+    <title>Lumen Market · Spring Boot + JPA</title>
+    <link rel="stylesheet" href="/project4/style.css">
+    <script defer src="/project4/app.js"></script>
+</head>
+<body>
+<div class="app-shell">
+    <header class="topbar">
+        <a class="brand" href="/project4/"><span class="brand-orb"></span><span>Lumen <em>Market</em></span></a>
+        <div class="topbar-meta"><span class="auth-dot"></span> Demo shopper <button id="cart-jump" class="cart-pill">Cart <b id="cart-count">0</b></button></div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-copy">
+                <div class="eyebrow">PROJECT 4 · SPRING BOOT + JPA</div>
+                <h1>Objects become<br><i>orders.</i></h1>
+                <p>Explore a small relational storefront where products, carts, orders, and payments are mapped to JPA entities.</p>
+                <div class="hero-chips"><span>H2 teaching database</span><span>Transactional checkout</span><span>REST + browser</span></div>
+            </div>
+            <div class="hero-art" aria-hidden="true"><div class="sun"></div><div class="card card-back"></div><div class="card card-front"><span>JPA</span><strong>Entity<br>relationships</strong><small>learn by tracing the data</small></div></div>
+        </section>
+
+        <div id="flash" class="flash" role="status" aria-live="polite"></div>
+
+        <section class="toolbar">
+            <div><div class="section-label">Curated objects</div><h2>Shop the collection</h2></div>
+            <div class="filters"><label class="search"><span>⌕</span><input id="search" type="search" placeholder="Search products"></label><select id="category"><option value="">All categories</option></select></div>
+        </section>
+
+        <section class="store-layout">
+            <div>
+                <div id="product-grid" class="product-grid"></div>
+                <div class="pager"><button id="previous-page" class="page-button">← Previous</button><span id="page-label">Page 1</span><button id="next-page" class="page-button">Next →</button></div>
+            </div>
+
+            <aside id="cart-panel" class="cart-panel">
+                <div class="cart-heading"><div><div class="section-label">Your selection</div><h2>Cart <span id="cart-heading-count">(0)</span></h2></div><span class="lock">⌑ secure demo</span></div>
+                <div id="cart-items" class="cart-items"><div class="cart-empty">Your cart is waiting for a useful object.</div></div>
+                <div class="cart-total"><span>Total</span><strong id="cart-total">$0.00</strong></div>
+                <form id="checkout-form" class="checkout-form">
+                    <div class="section-label">Demo checkout</div>
+                    <input id="shipping-name" required placeholder="Shipping name" value="Demo Shopper">
+                    <input id="shipping-email" required type="email" placeholder="Shipping email" value="shopper@example.com">
+                    <button class="button dark" type="submit">Place order <span>↗</span></button>
+                </form>
+            </aside>
+        </section>
+
+        <section class="orders-section">
+            <div class="section-label">Persistence in this session</div><h2>Recent orders</h2>
+            <div id="orders" class="orders-list"><div class="order-empty">Complete a checkout to see the order entity and payment record here.</div></div>
+        </section>
+    </main>
+
+    <footer><span>Project 4 learning storefront</span><span>Browser → Controller → Service → JPA → H2</span></footer>
+</div>
+</body>
+</html>

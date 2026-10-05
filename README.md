@@ -492,4 +492,24 @@ The backend API is available under `/api/project3/**`. The data is in memory
 and resets when the application restarts. Read the project guide in
 [`guides/PROJECT3_SPRING_MVC_BLOG_GUIDE.md`](guides/PROJECT3_SPRING_MVC_BLOG_GUIDE.md).
 
+### Project 4: Spring Boot + JPA Storefront
+
+Project 4 is a browser-browseable e-commerce learning application. It uses
+Spring Boot, explicit JPA/Hibernate configuration, relational entities, JPQL
+search, DTOs, pagination, transactions, and a small Basic-auth boundary.
+The frontend supports product browsing, filtering, cart operations, checkout,
+and order history.
+
+Run it and open [http://localhost:8080/project4/](http://localhost:8080/project4/):
+
+```bash
+mvn package
+java -jar target/java-spring-learning-0.1.0-SNAPSHOT.jar --project4
+```
+
+The demo credentials are `shopper` / `shopper-password`. They are local
+teaching fixtures only. The H2 database is disposable and resets on restart.
+Read the project guide in
+[`guides/PROJECT4_SPRING_BOOT_JPA_STOREFRONT_GUIDE.md`](guides/PROJECT4_SPRING_BOOT_JPA_STOREFRONT_GUIDE.md).
+
 # Java_SpringBoot_HibernateJPA
