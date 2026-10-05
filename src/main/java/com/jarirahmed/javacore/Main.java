@@ -23,6 +23,7 @@ import com.jarirahmed.projects.employeecli.EmployeeManagementCli;
 import com.jarirahmed.projects.inventory.demo.InventoryLesson;
 import com.jarirahmed.projects.blog.BlogProjectApplication;
 import com.jarirahmed.projects.storefront.StorefrontApplication;
+import com.jarirahmed.projects.hrm.HrmApplication;
 import com.jarirahmed.springapi.demo.SpringApiLesson;
 import com.jarirahmed.springcore.demo.SpringCoreLesson;
 import com.jarirahmed.springmvc.demo.SpringMvcLesson;
@@ -59,6 +60,10 @@ public final class Main {
         }
         if (args.length > 0 && "--project4".equals(args[0])) {
             StorefrontApplication.main(Arrays.copyOfRange(args, 1, args.length));
+            return;
+        }
+        if (args.length > 0 && "--project5".equals(args[0])) {
+            HrmApplication.main(Arrays.copyOfRange(args, 1, args.length));
             return;
         }
         if (args.length > 0 && "--boot".equals(args[0])) {

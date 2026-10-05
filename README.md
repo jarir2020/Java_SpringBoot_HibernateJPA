@@ -512,4 +512,27 @@ teaching fixtures only. The H2 database is disposable and resets on restart.
 Read the project guide in
 [`guides/PROJECT4_SPRING_BOOT_JPA_STOREFRONT_GUIDE.md`](guides/PROJECT4_SPRING_BOOT_JPA_STOREFRONT_GUIDE.md).
 
+### Project 5: Advanced Spring Boot HRM / Payroll SaaS
+
+Project 5 is a browser-browseable HRM and payroll learning application. It
+adds multi-company tenant filtering, employees, attendance upserts, leave
+workflow, payroll runs, role permissions, reports, notifications, audit logs,
+a Redis-shaped TTL cache, asynchronous delivery, and a scheduled reminder
+job. The browser frontend and backend are served by the same executable JAR.
+
+Run it and open [http://localhost:8080/project5/](http://localhost:8080/project5/):
+
+```bash
+mvn package
+java -jar target/java-spring-learning-0.1.0-SNAPSHOT.jar --project5
+```
+
+The admin demo credentials are `admin` / `admin-password`. The HR manager is
+`hr` / `hr-password`, and the employee fixture is `employee` /
+`employee-password`. They are local teaching fixtures only. The H2 database
+and the local cache reset when the application restarts.
+
+Read the project guide in
+[`guides/PROJECT5_ADVANCED_SPRING_BOOT_HRM_GUIDE.md`](guides/PROJECT5_ADVANCED_SPRING_BOOT_HRM_GUIDE.md).
+
 # Java_SpringBoot_HibernateJPA
