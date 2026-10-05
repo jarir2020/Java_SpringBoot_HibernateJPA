@@ -1,0 +1,26 @@
+spring:
+  application:
+    name: java-spring-learning
+
+debug: false
+
+server:
+  port: ${SERVER_PORT:8080}
+
+course:
+  name: ${COURSE_NAME:Spring Boot Course}
+  mode: ${COURSE_MODE:boot}
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info
+  endpoint:
+    health:
+      show-details: never
+
+info:
+  app:
+    name: Java Spring Learning
+    phase: Spring Boot

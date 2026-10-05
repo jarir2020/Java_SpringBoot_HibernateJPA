@@ -1,0 +1,35 @@
+# Java_SpringBoot_HibernateJPA
+
+## Summary
+
+Theory-first Java backend course progressing from Java fundamentals through
+Spring Core, Spring MVC, Spring Boot, SQL/JDBC, Hibernate ORM, Jakarta
+Persistence, Spring transactions, DTO/API architecture, and Spring Security.
+
+## Repository map
+
+- `plan.md` — complete roadmap and future project ideas.
+- `src/main/java` — runnable phase examples and layered application code.
+- `src/test/java` — JUnit and Spring MVC/security regression tests.
+- `guides/PHASE*_THEORY_QUICK_GUIDE.md` — phase explanations and boundaries.
+- `src/main/resources` — Boot configuration and JPA persistence metadata.
+- `pom.xml` — Maven dependencies and executable-JAR build.
+
+## Current status
+
+Phases 1–10 are implemented. The current endpoint example uses an employee
+API, JPA/Hibernate persistence, Spring transactions, DTO mapping, validation,
+HTTP Basic authentication, BCrypt password hashing, roles, and method
+security. JWT, OAuth2, OpenID Connect, and production identity storage are
+future topics.
+
+## Run
+
+```bash
+mvn test
+mvn package
+java -jar target/java-spring-learning-0.1.0-SNAPSHOT.jar
+```
+
+This is a learning repository. The in-memory credentials and H2 databases are
+local teaching fixtures, not production configuration.

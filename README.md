@@ -357,4 +357,36 @@ Read the explanation in
 
 Phase 11 will introduce testing as a first-class backend practice.
 
+## Phase 11: Testing
+
+Phase 11 treats testing as part of backend architecture. It demonstrates:
+
+- JUnit assertions and exception testing;
+- Mockito mocks and interaction verification for fast unit tests;
+- `@SpringBootTest` and `@AutoConfigureMockMvc` integration tests;
+- real controller, validation, transaction, JPA, and disposable H2 behavior;
+- API contract checks for status codes, JSON fields, and `Location` headers;
+- a disabled Testcontainers PostgreSQL template for Docker-backed integration
+  tests.
+
+The testing boundaries are:
+
+```text
+unit rule → mocked port
+integration test → Spring context + MockMvc + H2
+API test → public HTTP contract
+```
+
+Run the focused Phase 11 tests:
+
+```bash
+mvn -Dtest=EmployeeLabelServiceTest,Phase11SpringBootIntegrationTest test
+```
+
+Read the explanation in
+[`guides/PHASE11_THEORY_QUICK_GUIDE.md`](guides/PHASE11_THEORY_QUICK_GUIDE.md).
+
+Phase 12 will move to production-quality project structure and operational
+concerns.
+
 # Java_SpringBoot_HibernateJPA
