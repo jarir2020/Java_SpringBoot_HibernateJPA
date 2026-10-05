@@ -18,6 +18,7 @@ import com.jarirahmed.jpa.JpaLesson;
 import com.jarirahmed.springtransactions.SpringTransactionLesson;
 import com.jarirahmed.springsecurity.demo.SpringSecurityLesson;
 import com.jarirahmed.testing.TestingLesson;
+import com.jarirahmed.production.ProductionAdvancedLesson;
 import com.jarirahmed.springapi.demo.SpringApiLesson;
 import com.jarirahmed.springcore.demo.SpringCoreLesson;
 import com.jarirahmed.springmvc.demo.SpringMvcLesson;
@@ -121,6 +122,7 @@ public final class Main {
         SpringApiLesson.run();
         SpringSecurityLesson.run();
         TestingLesson.run();
-        System.out.println("\nPHASES 1-11 COMPLETE");
+        ProductionAdvancedLesson.run();
+        System.out.println("\nPHASES 1-12 COMPLETE");
     }
 }

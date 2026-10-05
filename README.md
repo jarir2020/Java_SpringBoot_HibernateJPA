@@ -386,7 +386,39 @@ mvn -Dtest=EmployeeLabelServiceTest,Phase11SpringBootIntegrationTest test
 Read the explanation in
 [`guides/PHASE11_THEORY_QUICK_GUIDE.md`](guides/PHASE11_THEORY_QUICK_GUIDE.md).
 
-Phase 12 will move to production-quality project structure and operational
-concerns.
+## Phase 12: Production / Advanced Spring
+
+Phase 12 is the final roadmap phase. It connects the course to production
+concerns while keeping the default lesson runnable without external brokers or
+cloud credentials. It demonstrates:
+
+- Spring Cache with measurable cache hits and explicit eviction;
+- named asynchronous work with a bounded task executor;
+- scheduled background work and the operational risks of duplicate jobs;
+- the architecture boundary between local async work and RabbitMQ/Kafka;
+- Redis, microservice, reverse-proxy, Docker, and CI/CD deployment guidance;
+- configuration, health, observability, graceful shutdown, and secret hygiene.
+
+The runnable Phase 12 lab is:
+
+```text
+cache → async executor → scheduled job → deployable application
+```
+
+Run the focused final-phase test:
+
+```bash
+mvn -Dtest=ProductionAdvancedExamplesTest test
+```
+
+Build the container example when Docker is available:
+
+```bash
+docker build -t java-spring-learning .
+docker run --rm -p 8080:8080 java-spring-learning
+```
+
+Read the explanation in
+[`guides/PHASE12_THEORY_QUICK_GUIDE.md`](guides/PHASE12_THEORY_QUICK_GUIDE.md).
 
 # Java_SpringBoot_HibernateJPA

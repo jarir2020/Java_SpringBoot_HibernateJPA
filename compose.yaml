@@ -1,0 +1,16 @@
+# Local infrastructure playground. The Redis service is intentionally behind
+# a profile so a normal `docker compose up` only starts the application.
+services:
+  app:
+    build: .
+    ports:
+      - "${SERVER_PORT:-8080}:8080"
+    environment:
+      SERVER_PORT: 8080
+      COURSE_MODE: container
+
+  redis:
+    image: redis:7-alpine
+    profiles: ["infra"]
+    ports:
+      - "6379:6379"

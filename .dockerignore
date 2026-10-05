@@ -1,0 +1,10 @@
+.git
+.agents
+.aws
+.codex
+.idea
+target
+*.iml
+README.md
+guides
+plan.md
