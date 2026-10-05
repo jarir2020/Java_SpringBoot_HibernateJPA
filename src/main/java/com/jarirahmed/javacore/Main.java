@@ -20,6 +20,7 @@ import com.jarirahmed.springsecurity.demo.SpringSecurityLesson;
 import com.jarirahmed.testing.TestingLesson;
 import com.jarirahmed.production.ProductionAdvancedLesson;
 import com.jarirahmed.projects.employeecli.EmployeeManagementCli;
+import com.jarirahmed.projects.inventory.demo.InventoryLesson;
 import com.jarirahmed.springapi.demo.SpringApiLesson;
 import com.jarirahmed.springcore.demo.SpringCoreLesson;
 import com.jarirahmed.springmvc.demo.SpringMvcLesson;
@@ -44,6 +45,10 @@ public final class Main {
                     System.in,
                     System.out,
                     args.length > 1 ? java.nio.file.Path.of(args[1]) : java.nio.file.Path.of("employees.txt"));
+            return;
+        }
+        if (args.length > 0 && "--project2".equals(args[0])) {
+            InventoryLesson.run();
             return;
         }
         if (args.length > 0 && "--boot".equals(args[0])) {

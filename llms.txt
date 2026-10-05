@@ -14,16 +14,20 @@ testing, advanced Spring patterns, and small progression projects.
 - `src/test/java` — JUnit and Spring MVC/security regression tests.
 - `guides/PHASE*_THEORY_QUICK_GUIDE.md` — phase explanations and boundaries.
 - `guides/PROJECT1_EMPLOYEE_MANAGEMENT_GUIDE.md` — first progression project.
+- `guides/PROJECT2_SPRING_CORE_INVENTORY_GUIDE.md` — Spring Core inventory project.
 - `src/main/java/com/jarirahmed/projects/employeecli` — testable Java CLI.
+- `src/main/java/com/jarirahmed/projects/inventory` — Spring Core inventory project.
 - `src/main/resources` — Boot configuration and JPA persistence metadata.
 - `pom.xml` — Maven dependencies and executable-JAR build.
 
 ## Current status
 
 Phases 1–12 are implemented. Project 1 is an Employee Management CLI using
-OOP, collections, exceptions, files, generics, streams, and tests. The
-advanced phase documents Redis, messaging, Docker, deployment, and operations
-without requiring external services during the normal build.
+OOP, collections, exceptions, files, generics, streams, and tests. Project 2
+is a small Spring Core inventory application using beans, DI, configuration,
+services, repositories, and tests. The advanced phase documents Redis,
+messaging, Docker, deployment, and operations without requiring external
+services during the normal build.
 
 ## Run
 
@@ -34,6 +38,9 @@ java -jar target/java-spring-learning-0.1.0-SNAPSHOT.jar
 
 # Start Project 1 instead of the full lesson runner.
 java -jar target/java-spring-learning-0.1.0-SNAPSHOT.jar --project1
+
+# Start Project 2 instead of the full lesson runner.
+java -jar target/java-spring-learning-0.1.0-SNAPSHOT.jar --project2
 ```
 
 This is a learning repository. The in-memory credentials and H2 databases are

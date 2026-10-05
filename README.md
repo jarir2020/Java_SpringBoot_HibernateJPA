@@ -452,4 +452,24 @@ Read the project guide in
 The next project will build a small Inventory Management System with Spring
 Core beans, dependency injection, configuration, services, and repositories.
 
+### Project 2: Spring Core Inventory Management System
+
+Project 2 turns the Spring Core lessons into a small in-memory inventory
+application. It demonstrates component scanning, `@Service`, `@Repository`,
+constructor injection, explicit `@Configuration`, `@Bean`, `@Value`, and the
+separation between service and repository responsibilities.
+
+Run it with:
+
+```bash
+mvn package
+java -jar target/java-spring-learning-0.1.0-SNAPSHOT.jar --project2
+```
+
+Read the project guide in
+[`guides/PROJECT2_SPRING_CORE_INVENTORY_GUIDE.md`](guides/PROJECT2_SPRING_CORE_INVENTORY_GUIDE.md).
+
+The application intentionally uses an in-memory repository. Database access,
+HTTP endpoints, validation, and security are reserved for later projects.
+
 # Java_SpringBoot_HibernateJPA
