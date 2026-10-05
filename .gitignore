@@ -9,3 +9,6 @@ target/
 /.agents/
 /.aws/
 /.codex/
+
+# Local Project 1 CLI data.
+/employees.txt

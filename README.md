@@ -421,4 +421,35 @@ docker run --rm -p 8080:8080 java-spring-learning
 Read the explanation in
 [`guides/PHASE12_THEORY_QUICK_GUIDE.md`](guides/PHASE12_THEORY_QUICK_GUIDE.md).
 
+## Recommended Project Progression
+
+The first project now turns the Java foundation into a small runnable CLI. It
+is intentionally focused on learning important boundaries rather than trying
+to be production-grade.
+
+### Project 1: Employee Management System
+
+Project 1 practices:
+
+- OOP and encapsulated employee state;
+- collections through an in-memory repository;
+- custom exceptions and input validation;
+- text-file persistence with Java NIO;
+- generics through `CrudRepository<T, ID>`;
+- streams for search, sorting, and payroll reports;
+- testable console input/output.
+
+Run it with:
+
+```bash
+mvn package
+java -jar target/java-spring-learning-0.1.0-SNAPSHOT.jar --project1
+```
+
+Read the project guide in
+[`guides/PROJECT1_EMPLOYEE_MANAGEMENT_GUIDE.md`](guides/PROJECT1_EMPLOYEE_MANAGEMENT_GUIDE.md).
+
+The next project will build a small Inventory Management System with Spring
+Core beans, dependency injection, configuration, services, and repositories.
+
 # Java_SpringBoot_HibernateJPA

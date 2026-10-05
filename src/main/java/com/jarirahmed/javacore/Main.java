@@ -19,6 +19,7 @@ import com.jarirahmed.springtransactions.SpringTransactionLesson;
 import com.jarirahmed.springsecurity.demo.SpringSecurityLesson;
 import com.jarirahmed.testing.TestingLesson;
 import com.jarirahmed.production.ProductionAdvancedLesson;
+import com.jarirahmed.projects.employeecli.EmployeeManagementCli;
 import com.jarirahmed.springapi.demo.SpringApiLesson;
 import com.jarirahmed.springcore.demo.SpringCoreLesson;
 import com.jarirahmed.springmvc.demo.SpringMvcLesson;
@@ -38,6 +39,13 @@ public final class Main {
     }
 
     public static void main(String[] args) throws Exception {
+        if (args.length > 0 && "--project1".equals(args[0])) {
+            EmployeeManagementCli.launch(
+                    System.in,
+                    System.out,
+                    args.length > 1 ? java.nio.file.Path.of(args[1]) : java.nio.file.Path.of("employees.txt"));
+            return;
+        }
         if (args.length > 0 && "--boot".equals(args[0])) {
             SpringBootLearningApplication.main(Arrays.copyOfRange(args, 1, args.length));
             return;
