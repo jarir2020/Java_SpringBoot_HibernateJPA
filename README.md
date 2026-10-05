@@ -472,4 +472,24 @@ Read the project guide in
 The application intentionally uses an in-memory repository. Database access,
 HTTP endpoints, validation, and security are reserved for later projects.
 
+### Project 3: Spring MVC Blog Studio
+
+Project 3 is the first browser-browseable project. It contains a Spring Boot
+backend with REST endpoints and a small vanilla HTML/CSS/JavaScript frontend
+served by the same application. It demonstrates users, posts, comments, CRUD,
+validation, exception handling, and the controller → service → repository
+flow.
+
+Run it and open [http://localhost:8080/project3/](http://localhost:8080/project3/)
+in a browser:
+
+```bash
+mvn package
+java -jar target/java-spring-learning-0.1.0-SNAPSHOT.jar --project3
+```
+
+The backend API is available under `/api/project3/**`. The data is in memory
+and resets when the application restarts. Read the project guide in
+[`guides/PROJECT3_SPRING_MVC_BLOG_GUIDE.md`](guides/PROJECT3_SPRING_MVC_BLOG_GUIDE.md).
+
 # Java_SpringBoot_HibernateJPA
